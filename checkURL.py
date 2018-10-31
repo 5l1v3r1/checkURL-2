@@ -70,7 +70,7 @@ def checkURL(url):
             totp = "???"
         print("\n\033[1;32m[\033[1;37m*\033[1;32m] CheckURL[ \033[1;33m{}\033[1;32m ]\033[1;37m ...\033[1;32mBy[\033[1;37msafeweb.norton.com\033[1;32m]".format(url))
         se(2)
-        if "UNTESTED" in status:
+        if status =="UNTESTED":
             se(0.10)
             print("\n\033[1;33m[\033[0;33m?\033[1;33m] WebSite Location :\033[1;31m "+loc)
             se(0.10)
