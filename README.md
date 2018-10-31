@@ -15,7 +15,11 @@
    
        ![BadUrl](https://user-images.githubusercontent.com/29546157/47791077-761be900-dd21-11e8-9d53-8cd66282ba47.PNG)
 
-   
+# Platforms:
+- [x] Linux
+- [x] MacOs
+- [x] Windows
+
 # Install:
   - git clone https://www.github.com/Oseid/checkURL.git
   - pip install mechanize
