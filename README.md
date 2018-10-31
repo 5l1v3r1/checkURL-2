@@ -25,7 +25,7 @@
   - pip install mechanize
  
 # Usage:
-  - python checkURL.py -u <website url>
+  - python checkURL.py -u [Website Url]
   
   - Eg: python checkURL.py -u https://www.google.com
   
