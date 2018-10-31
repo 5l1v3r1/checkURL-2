@@ -1,5 +1,5 @@
 # checkURL Script:
-   - jOB: Check URL Security For Bad URL By Using safeweb.norton.com Site :) 
+   - jOB: Check IF URL Is Secure OR Bad By Using [ safeweb.norton.com Site] :)
    
 # Script ScreenShots:
 
