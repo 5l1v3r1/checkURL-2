@@ -15,7 +15,7 @@
    
        ![BadUrl](https://user-images.githubusercontent.com/29546157/47791077-761be900-dd21-11e8-9d53-8cd66282ba47.PNG)
 
-# Platforms:
+# Supported platforms:
 - [x] Linux
 - [x] MacOs
 - [x] Windows
