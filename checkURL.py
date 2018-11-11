@@ -112,10 +112,17 @@ def checkURL(url):
             while ask=="" or ask is None or ask not in ['Y',"y","yes","YES","n","N","NO","no"]:
                 ask = raw_input("\033[1;33m!?~\033[1;31mOPEN[\033[1;37m {} \033[1;31m]\033[1;33m ??(\033[1;37mY:n\033[1;33m)>\033[1;31m ".format(url))
             if ask in ["Y","y","yes","YES"]:
-                print("\n\033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mOpening....[ \033[1;32m{}\033[1;37m ]".format(url))
-                se(1)
-                op(url)
-                print("\n\033[1;36m~Done\033[1;32m :)")
+		if "https://" in url or "http://" in url:
+                 print("\n\033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mOpening....[ \033[1;32m{}\033[1;37m ]".format(url))
+                 se(1)
+                 op(url)
+                 print("\n\033[1;36m~Done\033[1;32m :)")
+		else:
+                  print("\n\033[1;32m[\033[1;37m+\033[1;32m] \033[1;37mOpening....[ \033[1;32m{}\033[1;37m ]".format(url))
+		  url = "https://"+url
+                  se(1)
+                  op(url)
+                  print("\n\033[1;36m~Done\033[1;32m :)")
             else:
                 print("\n\033[1;36m~Done\033[1;32m :)")
                 exit(1)
@@ -147,11 +154,19 @@ def checkURL(url):
         print("\n\033[1;33m[\033[1;31m!\033[1;33m] Error:\033[1;37m Please Check Your URL\033[1;31m !!!")
         exit(1)
 parse = optparse.OptionParser("""
-USAGE:
-|    +))))) python checkURL.py -u/--url <[WEBSITE URL]>
-|    
-Example:
-       +)))))) python checkURL.py -u https://www.google.com
+/============================+====================================\ 
+|			     |					  |
+| [*] SCRIPT  : CheckURL     |   [~] JOB: URL Security Checker    |
+| [+] Version : 1.0          |   [~] Author : Oseid Aldary        |
+|----------------------------+------------------------------------|
+|								  |
+)USAGE:								  |
+|     +))))) python checkURL.py -u/--url <[WEBSITE URL]>	  |
+|								  |
+)Example:							  |
+|       +)))))) python checkURL.py -u https://www.google.com      |
+|                                                                 |
+\=================================================================/
 """)
 def Main():
     parse.add_option("-u","-U","--url","--URL", dest="URL", type="string")
@@ -162,7 +177,7 @@ def Main():
     else:
         print(parse.usage)
         exit(1)
-    
+
 if __name__=="__main__":
     Main()
 ##############################################################
