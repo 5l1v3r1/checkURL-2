@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 #########################################################################
 # SCRIPT : checkURL                                                     #
 # JOB    : Check IF URL IS BAD URL OR NOT BY Using [Safeweb.norton.com] #
